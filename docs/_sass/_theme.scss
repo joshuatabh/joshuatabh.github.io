@@ -1462,6 +1462,15 @@ html {
   font-weight: 300;
 }
 
+.pub-note {
+  font-size: 15px;
+  padding-left: 15px;
+  line-height: 1.45;
+  margin-top: 20px;
+  opacity: 0.85;
+  font-family: "Playfair Display", serif;
+}
+
 .pub-sidebar {
   position: sticky;
   top: 120px;
@@ -1537,6 +1546,13 @@ section {
 
   .pub-sidebar {
     display: none;
+  }
+  
+  .pub-note {
+    font-size: 13px;
+    padding-left: 0;
+    line-height: 1.4;
+    margin-top: 15px;
   }
 }
 

@@ -19,7 +19,7 @@ feature_image: /assets/banner/cabinDreamlike.png
 
   <div class="pub-content">
     <p class="dropcap">Easy access to academic information is <a href="https://www.vr.se/english/applying-for-funding/requirements-terms-and-conditions/publishing-open-access.html">crucial for societal and scientific development</a>. If you cannot access one of my publications, <a href="mailto:joshuatabh@biol.lu.se">email me</a> and I will provide requested copies. </p>
-    <p style="font-size: 16px; padding-left: 15px; line-height: 1.45em;"> The double-dagger symbol (‡) indicates that authors have contributed equally. Note that some publications were written under my middle name, Robertson.</p>
+    <p class="pub-note">The double-dagger symbol (‡) indicates that authors have contributed equally. Note that some publications were written under my middle name, Robertson.</p>
     <section id="preprints">
       <h4>Academic Preprints</h4>
       <div class="pub-list">
