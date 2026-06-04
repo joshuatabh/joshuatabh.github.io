@@ -26,8 +26,7 @@ feature_image: /assets/banner/cabinDreamlikeShort.png
   </div>
 </div>
 
-<div class="collection-box" style="margin: 40px 0; width: 95%;">
-  <div class="collection-content">
+<div class="collection-box writing-page-box" style="margin: 40px 0; width: 95%;">  <div class="collection-content">
     <h3>See the full collection.</h3>
   </div>
   <a href="/writing/" class="collection-btn">Writing</a>

@@ -519,7 +519,7 @@ h3.half-underline {
   }
 
   .feature-strip-image {
-    max-width: 280px;
+    max-width: 240px;
   }
 
   .feature-strip-body {
@@ -664,6 +664,11 @@ h3.half-underline {
   .collection-btn {
     width: auto;
     box-sizing: border-box;
+  }
+  
+  .collection-box.writing-page-box {
+    margin: 40px auto !important; /* 1. Overrides the inline '0' margin to center the box */
+    transform: translateX(6px);
   }
 }
 
