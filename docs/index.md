@@ -30,7 +30,7 @@ feature_image: /assets/banner/cabinDreamlikeShort.png
   <div class="collection-content">
     <h3>See the full collection.</h3>
   </div>
-  <a href="/writing/" class="collection-btn">Writings</a>
+  <a href="/writing/" class="collection-btn">Writing</a>
 </div>
 
 <!---<div class="feature-strip">
