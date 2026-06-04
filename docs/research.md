@@ -10,7 +10,7 @@ layout: mainPage
   <div class="collection-content">
     <h3>See published discoveries:</h3>
   </div>
-  <a href="/writing/publications/" class="collection-btn">Writings</a>
+  <a href="/writing/" class="collection-btn">Writing</a>
 </div>
 
 <p class="research-intro dropcap">Life has existed on Earth for more than 3 billion years, enduring extreme glaciation, volcanic eruptions, oxygen depressions, and enormous climatic swings. Such miraculous resilience is only possible because of adaptive evolution.</p>
