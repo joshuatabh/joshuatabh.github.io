@@ -25,7 +25,7 @@ h6 {
   position: relative;
   text-align: center;
   font-family: "Playfair Display", serif;
-  font-size: clamp(1.8rem, 2.5vw, 2.6rem);
+  font-size: unquote("clamp(1.8rem, 2.5vw, 2.6rem)");
   font-weight: 400;
   line-height: 1.15;
   color: #222;
@@ -43,7 +43,7 @@ h6 {
 
 h3.half-underline {
   font-family: "Playfair Display", serif !important;
-  font-size: clamp(1.8rem, 2.5vw, 2.6rem) !important;
+  font-size: unquote("clamp(1.8rem, 2.5vw, 2.6rem)") !important;
   font-weight: 400 !important;
   line-height: 1.15 !important;
   color: #222 !important;
@@ -378,7 +378,7 @@ h3.half-underline {
 }
 
 .feature-text h1 {
-  font-size: clamp(1.15rem, 3.5vw, 2.5rem);
+  font-size: unquote("clamp(1.15rem, 3.5vw, 2.5rem)");
   line-height: 1;
   text-align: left;
   margin: 0;
@@ -485,7 +485,7 @@ h3.half-underline {
 
 .feature-strip-lead {
   margin: 0 0 0.8em 0;
-  font-size: clamp(1.35rem, 2.3vw, 3rem);
+  font-size: unquote("clamp(1.35rem, 2.3vw, 3rem)");
   line-height: 1.15;
   font-weight: 200;
   letter-spacing: 0.01em;
@@ -494,7 +494,7 @@ h3.half-underline {
 .feature-strip-body {
   margin: 0 auto;
   max-width: 48ch;
-  font-size: clamp(0.9rem, 1.2vw, 1.4rem);
+  font-size: unquote("clamp(0.9rem, 1.2vw, 1.4rem)");
   line-height: 1.55;
   font-weight: 100;
 }
@@ -695,7 +695,7 @@ h3.half-underline {
   padding: 0;
   line-height: 1.35;
   font-family: "Playfair Display", serif;
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: unquote("clamp(1.5rem, 2vw, 2rem)");
   font-weight: 500;
   color: #333;
 }
@@ -829,7 +829,7 @@ h3.half-underline {
 .about-name {
   margin: 0;
   line-height: 0.9;
-  font-size: clamp(2.5rem, 6vw, 4.2rem);
+  font-size: unquote("clamp(2.5rem, 6vw, 4.2rem)");
   font-family: "Playfair Display", serif;
   color: #000;
   text-align: left;
@@ -919,7 +919,7 @@ h3.half-underline {
 .split-text h2 {
   margin: 0 0 20px 0;
   font-family: "Playfair Display", serif;
-  font-size: clamp(1.6rem, 2.1vw, 2.2rem);
+  font-size: unquote("clamp(1.6rem, 2.1vw, 2.2rem)");
   font-weight: 400;
   line-height: 1.15;
   color: #222;
@@ -930,7 +930,7 @@ h3.half-underline {
 .split-text p {
   margin: 0;
   font-family: "Playfair Display", serif;
-  font-size: clamp(1rem, 1.1vw, 1.15rem);
+  font-size: unquote("clamp(1rem, 1.1vw, 1.15rem)");
   line-height: 1.7;
   color: #555;
   font-weight: 300;
@@ -1233,7 +1233,7 @@ h3.half-underline {
 .research-intro {
   margin-bottom: 12px;
   font-family: "Playfair Display", serif;
-  font-size: clamp(16px, 0.82rem + 0.25vw, 18px);
+  font-size: unquote("clamp(16px, 0.82rem + 0.25vw, 18px)");
   line-height: 1.5;
   letter-spacing: -0.01em;
   text-align: justify;
@@ -1278,7 +1278,7 @@ h3.half-underline {
   padding: 0;
   line-height: 1.1;
   font-family: "Playfair Display", serif;
-  font-size: clamp(16.5px, 0.95rem + 0.25vw, 1.15rem);
+  font-size: unquote("clamp(16.5px, 0.95rem + 0.25vw, 1.15rem)");
   font-weight: 350;
   letter-spacing: -0.02em;
   text-align: left;
@@ -1287,7 +1287,7 @@ h3.half-underline {
 .research-content p {
   margin: 0;
   font-family: "Playfair Display", serif;
-  font-size: clamp(15px, 0.82rem + 0.25vw, 18px);
+  font-size: unquote("clamp(15px, 0.82rem + 0.25vw, 18px)");
   font-weight: 200;
   line-height: 1.5;
   letter-spacing: -0.01em;
