@@ -461,7 +461,7 @@ h3.half-underline {
 
 .feature-strip-image {
   width: 100%;
-  max-width: 320px;
+  max-width: 400px;
   aspect-ratio: 1 / 1;
   object-fit: contain;
   object-position: center center;
@@ -494,9 +494,10 @@ h3.half-underline {
 .feature-strip-body {
   margin: 0 auto;
   max-width: 48ch;
-  font-size: unquote("clamp(0.9rem, 1.2vw, 1.4rem)");
+  font-size: unquote("clamp(1.0rem, 1.2vw, 1.4rem)");
   line-height: 1.55;
   font-weight: 100;
+  opacity: 0.9;
 }
 
 .feature-strip-secondary {
@@ -518,7 +519,7 @@ h3.half-underline {
   }
 
   .feature-strip-image {
-    max-width: 200px;
+    max-width: 280px;
   }
 
   .feature-strip-body {
