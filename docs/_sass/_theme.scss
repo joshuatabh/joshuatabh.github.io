@@ -651,9 +651,9 @@ h3.half-underline {
   .collection-box {
     flex-direction: column; /* Stack on mobile */
     text-align: center;
-    gap: 20px;
-    padding: 30px 20px;
     align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
   }
 
   .collection-content h3 {
@@ -1285,7 +1285,7 @@ h3.half-underline {
   //font-family: "Josefin Sans" !important;
   font-family: "Playfair Display", serif;
   font-size: unquote("clamp(16.5px, 0.95rem + 0.25vw, 1.15rem)");
-  //text-transform: uppercase;
+  text-transform: uppercase;
   font-weight: 380;
   letter-spacing: -0.02em;
   text-align: left;
