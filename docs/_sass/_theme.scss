@@ -1232,6 +1232,7 @@ h3.half-underline {
 
 .research-intro {
   margin-bottom: 0;
+  margin-top: 0;
   font-family: "Playfair Display", serif;
   font-size: unquote("clamp(16px, 0.82rem + 0.25vw, 18px)");
   line-height: 1.25;
@@ -1253,7 +1254,7 @@ h3.half-underline {
 }
 
 .research-image {
-  flex: 0 0 clamp(340px, 32vw, 420px);
+  flex: 0 0 clamp(320px, 30vw, 400px);
   height: fit-content;
 }
 
@@ -1277,7 +1278,9 @@ h3.half-underline {
   margin: 0 0 10px 0;
   padding: 0;
   line-height: 1.1;
-  font-family: "Playfair Display", serif;
+  color: #858293 !important;
+  font-family: "Josefin Sans" !important;
+  //font-family: "Playfair Display", serif;
   font-size: unquote("clamp(16.5px, 0.95rem + 0.25vw, 1.15rem)");
   font-weight: 350;
   letter-spacing: -0.02em;
