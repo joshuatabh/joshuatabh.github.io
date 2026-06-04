@@ -803,7 +803,13 @@ h3.half-underline {
   z-index: 2;
   margin-top: 0px;
   text-align: left;
-  font-family: "Lora" !important;
+  font-family: "Playfair Display" !important;
+}
+
+.about-body .collection-btn {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0 auto;
 }
 
 .faded-portrait {
@@ -864,6 +870,8 @@ h3.half-underline {
     grid-column: 1 / 13;
     grid-row: 2;
     margin-top: 0 !important;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   .faded-portrait {
