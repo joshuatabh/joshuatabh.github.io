@@ -1287,9 +1287,9 @@ h3.half-underline {
 .research-content p {
   margin: 0;
   font-family: "Playfair Display", serif;
-  font-size: unquote("clamp(15px, 0.82rem + 0.25vw, 18px)");
+  font-size: unquote("clamp(15px, 0.82rem + 0.25vw, 16.5px)");
   font-weight: 150;
-  line-height: 1.3;
+  line-height: 1.2;
   letter-spacing: -0.01em;
   text-align: justify;
   text-justify: inter-word;
