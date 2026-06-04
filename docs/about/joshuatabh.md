@@ -13,7 +13,7 @@ feature_image: /assets/banner/cabinDreamlike.png
   
   <!-- 2. The Image (Stays Top Right) -->
   <div class="about-image-part">
-    <img src="/assets/photos/joshuaTabh_recoloured2.png" class="faded-portrait">
+    <img src="/assets/photos/joshuaTabh.png" class="faded-portrait">
   </div>
   
   <!-- 3. The Body Text (Drops below on narrow screens) -->
