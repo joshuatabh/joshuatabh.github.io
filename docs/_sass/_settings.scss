@@ -1,0 +1,48 @@
+// Background colours
+$backgroundColour: #ffffff !default;
+$codeBackgroundColour: #fafafa !default;
+$featureBackgroundColour: #f9fafa !default;
+$accentColour: #05bf85 !default;
+
+// Text colours
+$headingColour: #2f2f2f !default;
+$outlineColour: #2f2f2f !default;
+$bodyColour: #2f2f2f !default;
+$linkColour: #242e2b !default;
+$hoverColour: #bdbdbd !default;
+$focusColour: #fa407a !default;
+$captionColour: #bdbdbd !default;
+$white: #ffffff !default;
+
+// Typography
+
+$navtype: (
+  font-family: "Times New Roman",
+  // or whichever font you want for nav
+  regular: 400,
+  bold: 600,
+  cap-height: 0.75,
+) !default;
+
+$headingtype: (
+  font-family: "Playfair Display",
+  regular: 400,
+  bold: 700,
+  cap-height: 0.75,
+) !default;
+
+$bodytype: (
+  font-family: "Playfair Display",
+  regular: 400,
+  bold: 600,
+  italic: italic,
+  cap-height: 0.75,
+) !default;
+
+$monospacetype: (
+  font-family: "Playfair Display",
+  regular: 400,
+  cap-height: 0.68,
+) !default;
+
+// TIP: Load custom fonts in _config.yaml

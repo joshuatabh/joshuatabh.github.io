@@ -1,0 +1,116 @@
+{% if site.navigation_header %}
+<nav class="nav nav--header">
+  <button class="button button--nav" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="list list--nav">
+    {% for item in site.navigation_header %}
+      
+      {% comment %} Determine URL {% endcomment %}
+      {% if item.url contains '://' %}
+        {% assign item_url = item.url %}
+      {% else %}
+        {% assign item_url = item.url | relative_url %}
+      {% endif %}
+
+      <li class="item item--nav {% if item.children %}has-dropdown{% endif %}">
+        <a href="{{ item_url }}">{{ item.title }}</a>
+        
+        {% if item.children %}
+          <ul class="dropdown">
+            {% for child in item.children %}
+              {% if child.url contains '://' %}
+                {% assign child_url = child.url %}
+              {% else %}
+                {% assign child_url = child.url | relative_url %}
+              {% endif %}
+              <li class="item item--dropdown">
+                <a href="{{ child_url }}">{{ child.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+
+    {% endfor %}
+  </ul>
+  </nav>
+{% endif %}
+
+<script type="text/javascript">
+  // =========================
+  // NAV COLLAPSE (FIXED)
+  // =========================
+
+  const nav = document.querySelector('.nav--header');
+  const navList = document.querySelector('.list--nav');
+  const button = document.querySelector('.button--nav');
+
+  const MOBILE_WIDTH = 640;
+
+  function setMobileState() {
+    if (!nav || !navList) return;
+
+    if (window.innerWidth < MOBILE_WIDTH) {
+      nav.classList.add('is-mobile');
+
+      // ensure closed by default on resize
+      nav.classList.remove('open');
+
+    } else {
+      nav.classList.remove('is-mobile', 'open');
+      navList.removeAttribute('style');
+    }
+  }
+
+  setMobileState();
+  window.addEventListener('resize', setMobileState);
+
+  if (button && nav) {
+    button.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  }
+
+
+  // =========================
+  // DROPDOWN CLICK LOGIC (UNCHANGED BUT SAFER)
+  // =========================
+
+  const dropdownLinks = document.querySelectorAll('.item--nav.has-dropdown > a');
+
+  dropdownLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+
+      const parent = this.parentElement;
+
+      // only intercept on items that actually have dropdowns
+      if (parent.classList.contains('has-dropdown')) {
+        e.preventDefault();
+
+        parent.classList.toggle('open');
+
+        document.querySelectorAll('.item--nav.has-dropdown').forEach(item => {
+          if (item !== parent) {
+            item.classList.remove('open');
+          }
+        });
+      }
+    });
+  });
+
+
+  // =========================
+  // CLOSE ON OUTSIDE CLICK
+  // =========================
+
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.item--nav.has-dropdown')) {
+      document.querySelectorAll('.item--nav.has-dropdown')
+        .forEach(item => item.classList.remove('open'));
+    }
+  });
+
+</script>
