@@ -669,8 +669,8 @@ h3.half-underline {
 
 .feature-strip {
   position: relative;
-  background: #323c55;
-  box-shadow: 0 0 0 100vw #323c55;
+  background: #243046;
+  box-shadow: 0 0 0 100vw #243046;
   filter: greyscale(15%);
   clip-path: inset(0 -100vw);
 
@@ -970,13 +970,14 @@ h3.half-underline {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 24px;
-  background-color: #f3f3f3;
+  background-color: #f5f5f5;
   border: none;
   border-radius: 20px;
-  padding: 45px 50px;
-  margin: 40px auto;
+  padding: 35px 40px;
+  margin: 30px auto;
+  gap: 18px;
   width: 100%;
+  max-width: 900px;
   box-sizing: border-box;
 }
 
@@ -984,31 +985,32 @@ h3.half-underline {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 900px;
+  max-width: 800px;
 }
 
 .contact-content h3 {
   margin: 0;
   padding: 0;
-  line-height: 1.35;
   font-family: "Playfair Display", serif;
-  font-size: unquote("clamp(1.5rem, 2vw, 2rem)");
+  font-size: unquote("clamp(1.0rem, 1.4vw, 1.2rem)");
+  line-height: 1.3;
+  //max-width: 32ch;
   font-weight: 500;
   color: #333;
 }
 
 .contact-btn {
   display: inline-block;
-  padding: 12px 28px;
+  padding: 10px 22px;
   border-radius: 999px;
   background-color: #323c55;
   opacity: 0.9;
   color: #fff;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   transition: all 0.2s ease;
   white-space: nowrap;
 }
@@ -1019,11 +1021,11 @@ h3.half-underline {
 
 @media (max-width: 768px) {
   .contact-box {
-    padding: 35px 25px;
-    gap: 20px;
+    padding: 28px 20px;
+    gap: 16px;
   }
   .contact-content h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .contact-btn {
     width: auto;
@@ -1233,7 +1235,8 @@ h3.half-underline {
 .split-text h2 {
   margin: 0 0 20px 0;
   font-family: "Playfair Display", serif;
-  font-size: unquote("clamp(1.6rem, 2.1vw, 2.2rem)");
+  font-size: unquote("clamp(1.4rem, 1.6vw, 1.8rem)");
+  max-width: 26ch;
   font-weight: 400;
   line-height: 1.15;
   color: #222;
@@ -1416,17 +1419,20 @@ h3.half-underline {
 }
 
 .three-col-layout {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr 1.1fr;
-  gap: 40px;
-  width: 95vw;
-  max-width: 1400px;
-  margin: 80px auto;
   position: relative;
-  left: 50%;
+  transform: translateY(40px);
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr) minmax(0, 0.9fr); // ✅ smaller images
+  max-width: 1200px;
+  gap: unquote("clamp(20px, 3vw, 40px)");
+  width: 100%;
+  //max-width: 1400px;
+  margin: 80px auto;
   opacity: 0;
-  transform: translate(-50%, 40px);
   align-items: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+
   transition:
     opacity 1.2s ease,
     transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1435,7 +1441,7 @@ h3.half-underline {
 
 .three-col-layout.is-visible {
   opacity: 1;
-  transform: translate(-50%, 0);
+  transform: translate(0);
   pointer-events: auto;
 }
 
@@ -1454,7 +1460,7 @@ h3.half-underline {
   border-radius: 4px;
   overflow: hidden;
   text-decoration: none;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
 }
 
 .three-col-image img {

@@ -108,8 +108,9 @@ homepage: true
   </a>
 </div>
 
-<div class="contact-box">
-  <div class="contact-content">
+<div class="collection-box writing-page-box"
+     style="margin: 40px auto; width: 90%; max-width: 1200px;">
+ <div class="collection-content">
     <h3>Interested in collaboration or public programming?</h3>
   </div>
   <a href="mailto:joshuatabh@biol.lu.se" class="contact-btn">Get in touch</a>
