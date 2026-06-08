@@ -109,7 +109,7 @@ homepage: true
 </div>
 
 <div class="collection-box writing-page-box"
-     style="margin: 40px auto; width: 90%; max-width: 1200px; border-radius: 5px;">
+     style="margin: 40px auto; width: 90%; max-width: 1200px; border-radius: 5px; border: 1px solid #e5e5e5; background: #f9f9f9;">
  <div class="collection-content">
     <h3>Interested in collaboration or public programming?</h3>
   </div>

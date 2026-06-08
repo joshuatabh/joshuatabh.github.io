@@ -1431,7 +1431,12 @@ h3.half-underline {
   opacity: 0;
   align-items: center;
   box-sizing: border-box;
-  padding: 0 20px;
+  padding: 60px 60px;
+  // Background
+  background-color: #f9f9f9;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0);
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
 
   transition:
     opacity 1.2s ease,
