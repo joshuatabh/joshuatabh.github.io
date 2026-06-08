@@ -81,7 +81,7 @@ h3.half-underline {
   z-index: 200;
 
   .container {
-    position: absolute; // ✅ THIS is what makes it overlay
+    position: absolute;
     width: 100%;
     max-width: 1700px;
     top: 0;
@@ -89,25 +89,25 @@ h3.half-underline {
     margin: 0 auto;
     z-index: 101;
     padding: 2.2rem 2rem 0 2rem;
-    padding-top: clamp(3rem, 8vw, 6rem);
+    padding-top: unquote("clamp(3rem, 8vw, 6rem)");
     @include flexbox;
-    @include justify-content(center); // ✅ center nav
+    @include justify-content(center);
     @include align-items(center);
     gap: 2rem;
     padding-top: 2.2rem;
 
-    background: transparent !important; // ✅ kill white bar
+    background: transparent !important;
   }
 
   .container::after {
     content: "";
-    width: clamp(120px, 8vw, 220px);
+    width: unquote("clamp(120px, 8vw, 220px)");
     display: block;
   }
 
   .list--nav {
     display: flex;
-    gap: clamp(1.5rem, 2.5vw, 2rem);
+    gap: unquote("clamp(1.5rem, 2.5vw, 2rem)");
     justify-content: center;
     list-style: none;
     padding: 0;
@@ -122,12 +122,11 @@ h3.half-underline {
     text-decoration: none;
   }
 
-  // ✅ logo bigger and lower
   .logo {
     display: block;
-    margin-left: clamp(0.5rem, 3vw, 1rem);
+    margin-left: unquote("clamp(0.5rem, 3vw, 1rem)");
     img {
-      height: clamp(100px, 6vw, 180px) !important;
+      height: unquote("clamp(100px, 6vw, 180px)") !important;
     }
   }
 }
@@ -137,7 +136,7 @@ h3.half-underline {
 }
 
 .header--homepage .item--nav a {
-  font-size: clamp(18px, 1.2vw, 24px) !important;
+  font-size: unquote("clamp(18px, 1.2vw, 24px)") !important;
   font-weight: 400;
   flex-grow: 1;
   text-align: center;
@@ -180,7 +179,7 @@ h3.half-underline {
     max-height: 1cm;
   }
   .logo img {
-    height: clamp(52px, 2.2vw, 42px);
+    height: unquote("clamp(52px, 2.2vw, 42px)");
     width: auto;
     margin-left: -2.5%;
   }
@@ -370,7 +369,7 @@ h3.half-underline {
   }
 
   .header--homepage .container {
-    position: absolute !important; // ✅ restore overlay
+    position: absolute !important;
     top: 0;
     left: 0;
     right: 0;
@@ -381,11 +380,11 @@ h3.half-underline {
     background: transparent !important;
 
     .button--nav {
-      position: fixed; // ✅ KEY CHANGE (detach from container)
-      top: 1rem; // ✅ top of viewport (not container)
-      right: 1rem; // ✅ true right edge
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
       transform: none;
-      z-index: 5000; // ✅ ensure it's above everything
+      z-index: 5000;
     }
 
     .list--nav {
@@ -415,10 +414,10 @@ h3.half-underline {
     }
 
     .item--nav a {
-      color: white !important; // ✅ white text
-      font-size: 15px; // ✅ slightly larger readability
+      color: white !important;
+      font-size: 15px;
       display: block;
-      padding: 6px 0; // ✅ clickable spacing
+      padding: 6px 0;
     }
 
     .button--nav {
@@ -426,20 +425,20 @@ h3.half-underline {
     }
 
     .dropdown {
-      background: rgba(0, 0, 0, 0.6); // ✅ match parent
-      border-radius: 8px; // ✅ same rounded feel
-      padding: 6px 12px; // ✅ spacing inside
-      margin-top: 6px; // ✅ slight separation
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 8px;
+      padding: 6px 12px;
+      margin-top: 6px;
     }
 
     .dropdown .item--dropdown a {
-      color: white !important; // ✅ readable text
+      color: white !important;
     }
 
     .logo img {
-      height: clamp(100px, 6vw, 180px);
+      height: unquote("clamp(100px, 6vw, 180px)");
       transform: translateY(8px);
-      margin-left: 5%; // ✅ move logo DOWN
+      margin-left: 5%;
     }
   }
 }
@@ -476,11 +475,12 @@ h3.half-underline {
   background-size: cover;
   background-position: top center;
   box-sizing: border-box;
-  border-top: 1px solid $outlineColour;
-  border-bottom: 1.5px solid $outlineColour;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.08);
+
   .container {
     position: relative;
-    min-height: clamp(220px, 45vw, 55vh);
+    min-height: unquote("clamp(220px, 45vw, 55vh)");
     max-width: 100%;
     margin: 0px;
     @include flex-direction(column);
@@ -492,9 +492,9 @@ h3.half-underline {
 .feature--homepage {
   position: relative;
   z-index: 1;
-  min-height: 110vh; // ✅ use min-height, not fixed height
+  min-height: 110vh;
   height: auto;
-  margin-bottom: clamp(60px, 10vw, 140px);
+  margin-bottom: unquote("clamp(60px, 10vw, 140px)");
 }
 
 .feature--homepage .container {
@@ -514,7 +514,7 @@ h3.half-underline {
   top: 70%;
   left: 9.5%;
   transform: translateY(-50%);
-  width: clamp(260px, 32vw, 500px);
+  width: unquote("clamp(260px, 32vw, 500px)");
   color: white;
   //color: black;
   font-family: "Playfair Display", serif;
@@ -536,13 +536,10 @@ h3.half-underline {
 }
 
 .feature--homepage .feature-text {
-  color: white !important; // ✅ ensure white (even if already set)
-  // ✅ move slightly left to give more room
+  color: white !important;
   left: 8%;
-  // ✅ allow it to extend further right
-  right: auto; // ✅ THIS is the key change
-  width: calc(100% - 16%); // ✅ overrides fixed width
-  // ✅ make text container wider
+  right: auto;
+  width: unquote("calc(100% - 16%)");
   max-width: 1000px;
   opacity: 0.9;
   position: sticky;
@@ -557,7 +554,7 @@ h3.half-underline {
 }
 
 .feature--homepage .feature-text h1 {
-  font-size: clamp(2.2rem, 3.2vw, 3.6rem); // ✅ larger than before
+  font-size: unquote("clamp(2.2rem, 3.2vw, 3.6rem)");
   line-height: 1.1;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   max-width: 30ch;
@@ -613,9 +610,9 @@ h3.half-underline {
   }
 
   .feature--homepage .feature-text h1 {
-    font-size: clamp(1.9rem, 5.5vw, 2.6rem);
-    max-width: none; // ✅ FIX narrow column issue
-    padding-right: 0; // ✅ remove left push
+    font-size: unquote("clamp(1.9rem, 5.5vw, 2.6rem)");
+    max-width: none;
+    padding-right: 0;
     text-align: center;
   }
 }
@@ -638,7 +635,7 @@ h3.half-underline {
 
 .section-heading {
   position: relative;
-  margin: 0 auto clamp(35px, 5vw, 70px) auto;
+  margin: 0 auto unquote("clamp(35px, 5vw, 70px)") auto;
   z-index: 10;
 }
 
@@ -674,14 +671,12 @@ h3.half-underline {
   position: relative;
   background: #323c55;
   box-shadow: 0 0 0 100vw #323c55;
-  //opacity: 88%;
   filter: greyscale(15%);
   clip-path: inset(0 -100vw);
 
   width: 100%;
-  //padding: 6vw 8vw;
-  padding: clamp(120px, 16vw, 280px) 8vw;
-  min-height: clamp(500px, 75vh, 800px);
+  padding: unquote("clamp(120px, 16vw, 280px) 8vw");
+  min-height: unquote("clamp(500px, 75vh, 800px)");
   margin-top: 7.5%;
   box-sizing: border-box;
   overflow: hidden;
@@ -699,19 +694,18 @@ h3.half-underline {
 
 .feature-strip-inner {
   display: block;
-  max-width: 900px; // ✅ tighter for readability
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column; // ✅ text stack
-  //justify-content: flex-start;
+  flex-direction: column;
   padding: 0;
-  align-items: center; // ✅ horizontal centering
-  text-align: center; // ✅ center all text
+  align-items: center;
+  text-align: center;
 }
 
 .feature-strip-text {
   width: 100%;
-  max-width: 65ch; // ✅ optimal reading width
+  max-width: 65ch;
   color: white;
   text-align: center;
   line-height: normal;
@@ -719,7 +713,7 @@ h3.half-underline {
 
 .feature-strip-lead {
   margin: 0 0 1em 0;
-  font-size: clamp(3rem, 2.8vw, 5rem) !important; // ✅ bigger + more elegant
+  font-size: unquote("clamp(3rem, 2.8vw, 5rem)") !important;
   line-height: 1.3 !important;
   font-weight: 200;
   letter-spacing: 0.01em;
@@ -731,7 +725,7 @@ h3.half-underline {
 .feature-strip-body {
   margin: 0 auto;
   max-width: 55ch;
-  font-size: clamp(1.3rem, 1.1vw, 1.8rem); // ✅ slightly larger
+  font-size: unquote("clamp(1.3rem, 1.1vw, 1.8rem)");
   line-height: 1.6;
   font-weight: 100;
   opacity: 0.92;
@@ -809,26 +803,16 @@ h3.half-underline {
 @media (max-width: 800px) {
   .feature-strip {
     display: flex;
-    align-items: center; // ✅ vertical centering
-    justify-content: center; // ✅ horizontal centering
-    min-height: clamp(400px, 75vh, 500px);
+    align-items: center;
+    justify-content: center;
+    min-height: unquote("clamp(400px, 75vh, 500px)");
   }
 
   .feature-strip-inner {
     display: flex;
-    align-items: center; // ✅ vertical centering
+    align-items: center;
     justify-content: center;
   }
-
-  //.feature-image-wrap,
-  //.feature-strip-text {
-  //  flex: 0 0 100%;
-  //  max-width: 100%;
-  //}
-
-  //.feature-strip-image {
-  //  max-width: 240px;
-  //}
 
   .feature-strip-body {
     max-width: 60ch;
@@ -958,7 +942,7 @@ h3.half-underline {
 
 @media (max-width: 768px) {
   .collection-box {
-    flex-direction: column; /* Stack on mobile */
+    flex-direction: column;
     text-align: center;
     align-items: center;
     gap: 12px;
@@ -1178,7 +1162,7 @@ h3.half-underline {
   }
 
   .about-image-part {
-    grid-column: 5 / 13; // 3. FIX: Adjust tracking slightly to prevent overlapping text compression
+    grid-column: 5 / 13;
     grid-row: 1;
     align-self: start;
   }
@@ -1629,7 +1613,7 @@ h3.half-underline {
 }
 
 .research-image {
-  flex: 0 0 clamp(320px, 30vw, 400px);
+  flex: 0 0 unquote("clamp(320px, 30vw, 400px)");
   height: fit-content;
 }
 
@@ -1734,7 +1718,7 @@ h3.half-underline {
 }
 
 .pub-image {
-  flex: 0 0 clamp(160px, 25%, 240px);
+  flex: 0 0 unquote("clamp(160px, 25%, 240px)");
 }
 
 .pub-image img {
