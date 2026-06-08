@@ -514,7 +514,7 @@ h3.half-underline {
   top: 70%;
   left: 9.5%;
   transform: translateY(-50%);
-  width: unquote("clamp(260px, 32vw, 500px)");
+  width: unquote("clamp(260px, 36vw, 650px)");
   color: white;
   //color: black;
   font-family: "Playfair Display", serif;
@@ -1564,8 +1564,13 @@ h3.half-underline {
 .research-slider {
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 90%;
   margin: 60px auto;
+  background-color: #f9f9f9;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0);
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 30px 25px;
 }
 
 .research-slide {
@@ -1628,6 +1633,7 @@ h3.half-underline {
   display: block;
   border-radius: 5px;
   object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 .research-content {
@@ -1648,7 +1654,7 @@ h3.half-underline {
   //font-family: "Josefin Sans" !important;
   font-family: "Playfair Display", serif;
   font-size: unquote("clamp(16.5px, 0.95rem + 0.25vw, 1.15rem)");
-  text-transform: uppercase;
+  //text-transform: uppercase;
   font-weight: 380;
   letter-spacing: -0.02em;
   text-align: left;
