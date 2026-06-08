@@ -1,8 +1,9 @@
 ---
-title: 
+title:
 layout: mainPage
-feature_image: /assets/banner/cabinDreamlike.png
+feature_image: /assets/banner/cabinDreamlikeShort.png
 ---
+
 <div class="about-container">
   
   <!-- 1. The Header (Stays Top Left) -->

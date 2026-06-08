@@ -1,5 +1,5 @@
 {% if site.navigation_header %}
-<nav class="nav nav--header">
+<nav class="nav nav--header{% if page.homepage %} nav--homepage{% endif %}">
   <button class="button button--nav" aria-label="Toggle navigation">
     <span></span>
     <span></span>
@@ -7,36 +7,36 @@
   </button>
   <ul class="list list--nav">
     {% for item in site.navigation_header %}
-      
-      {% comment %} Determine URL {% endcomment %}
-      {% if item.url contains '://' %}
-        {% assign item_url = item.url %}
-      {% else %}
-        {% assign item_url = item.url | relative_url %}
-      {% endif %}
 
-      <li class="item item--nav {% if item.children %}has-dropdown{% endif %}">
-        <a href="{{ item_url }}">{{ item.title }}</a>
-        
-        {% if item.children %}
-          <ul class="dropdown">
-            {% for child in item.children %}
-              {% if child.url contains '://' %}
-                {% assign child_url = child.url %}
-              {% else %}
-                {% assign child_url = child.url | relative_url %}
-              {% endif %}
-              <li class="item item--dropdown">
-                <a href="{{ child_url }}">{{ child.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
+    {% comment %} Determine URL {% endcomment %}
+    {% if item.url contains '://' %}
+    {% assign item_url = item.url %}
+    {% else %}
+    {% assign item_url = item.url | relative_url %}
+    {% endif %}
+
+    <li class="item item--nav {% if item.children %}has-dropdown{% endif %}">
+      <a href="{{ item_url }}">{{ item.title }}</a>
+
+      {% if item.children %}
+      <ul class="dropdown">
+        {% for child in item.children %}
+        {% if child.url contains '://' %}
+        {% assign child_url = child.url %}
+        {% else %}
+        {% assign child_url = child.url | relative_url %}
         {% endif %}
-      </li>
+        <li class="item item--dropdown">
+          <a href="{{ child_url }}">{{ child.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </li>
 
     {% endfor %}
   </ul>
-  </nav>
+</nav>
 {% endif %}
 
 <script type="text/javascript">

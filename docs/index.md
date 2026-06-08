@@ -1,6 +1,7 @@
 ---
 layout: mainPage
-feature_image: /assets/banner/cabinDreamlikeShort.png
+feature_image: /assets/banner/cabinDreamlikeLarge.png
+homepage: true
 ---
 
 <div class="section-heading section-heading--split">
@@ -53,13 +54,13 @@ feature_image: /assets/banner/cabinDreamlikeShort.png
 
 <div class="feature-strip">
   <div class="feature-strip-inner">
-    <div class="feature-image-wrap">
+    <!--<div class="feature-image-wrap">
       <img
         src="/assets/photos/lifeDesign.png"
         alt="Evolution portrait"
         class="feature-strip-image"
       >
-    </div>
+    </div>-->
     <div class="feature-strip-text">
       <p class="feature-strip-lead">
         Evolution is often seen as <a href="https://www.penguinrandomhouse.ca/books/403514/endless-forms-most-beautiful-by-sean-b-carroll/9780393327793" class="hover-underline"> boundless</a>.

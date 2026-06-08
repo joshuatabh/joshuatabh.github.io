@@ -1,10 +1,17 @@
-<header class="header">
+<header class="header{% if page.homepage %} header--homepage{% endif %}">
   <div class="container">
-    {% if site.logo %}{% include site-logo.html %}{% endif %}
+    {% if site.logo %}
+    {% if page.homepage %}
+    <a href="{{ '/' | relative_url }}" class="logo">
+      <img src="{{ '/assets/logos/logo-white.png' | relative_url }}" alt="{{ site.title }} logo">
+    </a>
+    {% else %}
+    {% include site-logo.html %}
+    {% endif %}
+    {% endif %}
 
     {% include nav-header.html %}
   </div>
 
   {% include site-feature-main.html %}
-
 </header>
