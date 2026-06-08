@@ -65,6 +65,9 @@ homepage: true
       <p class="feature-strip-lead">
         Evolution is often seen as <a href="https://www.penguinrandomhouse.ca/books/403514/endless-forms-most-beautiful-by-sean-b-carroll/9780393327793" class="hover-underline"> boundless</a>.
       </p>
+      <div class="feature-strip-image-wrap">
+        <img src="/assets/photos/lifeDesign.png" alt="Evolution image" class="feature-strip-image">
+      </div>
       <p class="feature-strip-body">
         Yet the diversity of life's forms and functions 
         occupy a tiny fraction of the imaginary possibility

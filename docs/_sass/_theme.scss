@@ -675,8 +675,8 @@ h3.half-underline {
   clip-path: inset(0 -100vw);
 
   width: 100%;
-  padding: unquote("clamp(120px, 16vw, 280px) 8vw");
-  min-height: unquote("clamp(400px, 75vh, 600px)");
+  padding: unquote("clamp(100px, 14vw, 150px) 6vw");
+  min-height: unquote("clamp(400px, 75vh, 500px)");
   margin-top: 7.5%;
   box-sizing: border-box;
   overflow: hidden;
@@ -730,6 +730,24 @@ h3.half-underline {
   font-weight: 100;
   opacity: 0.92;
   opacity: 0.9;
+}
+
+.feature-strip-image-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: clamp(20px, 3vw, 40px) 0;
+  padding-bottom: 4vh;
+}
+
+.feature-strip-image {
+  width: 100%;
+  max-width: 450px; // controls upper size
+  height: auto;
+  display: block;
+  background: none;
+  //border-radius: 6px; // optional
+  //box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); // optional
 }
 
 // Option to add image in the strip
@@ -816,6 +834,10 @@ h3.half-underline {
 
   .feature-strip-body {
     max-width: 60ch;
+  }
+
+  .feature-strip-image {
+    max-width: 80%;
   }
 }
 
