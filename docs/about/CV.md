@@ -9,6 +9,17 @@ feature_position: top
 
 <p>Updated: 2026-05-10</p>
 
+<div class="collection-box pdf-mobile-box">
+  <div class="collection-content">
+    <h3>Viewing this on mobile? Download the full CV here:</h3>
+  </div>
+  <a href="/assets/documents/tabhCV.pdf" 
+     target="_blank" 
+     class="collection-btn">
+    Download
+  </a>
+</div>
+
 <div class="pdf-container">
   <iframe
     src="/assets/documents/tabhCV.pdf"

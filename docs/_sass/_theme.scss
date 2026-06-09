@@ -2532,3 +2532,18 @@ br {
     border-right: none;
   }
 }
+
+// For mobile only viewing
+.pdf-mobile-box {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .pdf-mobile-box {
+    display: flex;
+  }
+
+  .pdf-container {
+    opacity: 0.6;
+  }
+}
