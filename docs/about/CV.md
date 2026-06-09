@@ -11,7 +11,7 @@ feature_position: top
 
 <div class="collection-box pdf-mobile-box">
   <div class="collection-content">
-    <h3>Viewing this on mobile? Download the full CV here:</h3>
+    <h3>Viewing this on mobile? Download my full CV here:</h3>
   </div>
   <a href="/assets/documents/tabhCV.pdf" 
      target="_blank" 
