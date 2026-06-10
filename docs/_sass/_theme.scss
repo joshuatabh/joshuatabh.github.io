@@ -675,7 +675,8 @@ h3.half-underline {
   filter: greyscale(15%);
   clip-path: inset(0 -100vw);
   width: 100%;
-  padding: unquote("clamp(40px, 6vw, 80px) 6vw");
+  //padding: unquote("clamp(40px, 6vw, 80px) 6vw");
+  padding: clamp(40px, 6vw, 80px) 4vw;
   min-height: unquote("clamp(250px, 50vh, 350px);");
   margin-top: 7.5%;
   box-sizing: border-box;
@@ -692,11 +693,13 @@ h3.half-underline {
 
 .feature-strip-inner {
   display: block;
-  max-width: 900px;
+  //max-width: 900px;
+  max-width: 1400px; /* or none / 95% */
   margin: 0 auto;
+  //padding: 0;
+  padding: 0 2vw;
   display: flex;
   flex-direction: column;
-  padding: 0;
   align-items: center;
   text-align: center;
   position: relative;
@@ -876,6 +879,14 @@ h3.half-underline {
   margin-top: 1.25em;
   font-weight: 300;
   opacity: 0.92;
+}
+
+// Wide screem
+@media (min-width: 1400px) {
+  .feature-strip-inner {
+    max-width: none;
+    width: 92%;
+  }
 }
 
 @media (max-width: 800px) {
