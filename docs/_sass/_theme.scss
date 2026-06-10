@@ -683,13 +683,13 @@ h3.half-underline {
   overflow: hidden;
 }
 
-.feature-strip::before {
-  content: "";
-  position: absolute;
-  inset: -150px 0 0 0;
-  background: linear-gradient(to bottom, transparent, #2a3850);
-  pointer-events: none;
-}
+// .feature-strip::before {
+//   content: "";
+//   position: absolute;
+//   inset: -150px 0 0 0;
+//   background: linear-gradient(to bottom, transparent, #2a3850);
+//   pointer-events: none;
+// }
 
 .feature-strip-inner {
   display: block;
