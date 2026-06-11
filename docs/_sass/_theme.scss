@@ -751,24 +751,24 @@ h3.half-underline {
   padding-bottom: 1.5vh;
 }
 
-.feature-strip-image-wrap::before {
-  content: "";
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.08),
-    transparent 70%
-  );
-  filter: blur(40px);
-  z-index: -1;
-}
+// .feature-strip-image-wrap::before {
+//   content: "";
+//   position: absolute;
+//   width: 500px;
+//   height: 500px;
+//   border-radius: 50%;
+//   background: radial-gradient(
+//     circle,
+//     rgba(255, 255, 255, 0.08),
+//     transparent 70%
+//   );
+//   filter: blur(40px);
+//   z-index: -1;
+// }
 
 .feature-strip-image {
   width: 100%;
-  max-width: 450px;
+  max-width: 500px;
   height: auto;
   display: block;
   background: none;
