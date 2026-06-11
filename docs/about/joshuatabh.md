@@ -23,6 +23,6 @@ feature_image: /assets/banner/cabinDreamlikeShort.png
     <p> Formerly, my research also examined how social environments guide biological evolution.</p>
     <p>I received a degree in zoology at the University of Guelph and a PhD in ecology and evolution at Trent University. Since 2022, I have been a researcher at Lund University, one of Sweden's oldest and most prestigious universities. Collectively, I have over 15 years of experience studying life on Earth at institutions across the west, and have published widely on a diversity of species in leading journals. Beyond research, I advocate for nature conservation by serving as a board member for a <a href="https://nsnt.ca/"> nature trust </a> in my home province of Nova Scotia, Canada. </p>
     <p>When not in Sweden, I live on Cape Breton Island (Unama'ki) in Eastern Canada.</p>
-    <a href="/writing" class="collection-btn">Publications</a>
+    <a href="/writing" class="collection-btn" style="margin-bottom: 20px;">Publications</a>
 </div>
 </div>
