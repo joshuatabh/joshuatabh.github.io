@@ -4,7 +4,7 @@ feature_image: /assets/banner/cabinDreamlikeShort.png
 layout: mainPage
 ---
 
-<h3 class="half-underline" style="margin-top: -1%;">Current Research</h3>
+<h3 class="half-underline" style="margin-top: -1%;">Current Projects</h3>
 
 <div class="collection-box" style="width: 90%; position: center;">
   <div class="collection-content">
