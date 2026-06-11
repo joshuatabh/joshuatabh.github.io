@@ -1,5 +1,6 @@
 ---
 title: Looks like you're offline
+permalink: /offline.html
 indexing: false
 sitemap: false
 ---
